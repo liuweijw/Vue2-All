@@ -2,11 +2,19 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>y</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>Vue2-ALL</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <!-- 创建和挂载根实  通过 router 配置参数注入路由 让整个应用都有路由功能-->
+      <router-view></router-view>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>

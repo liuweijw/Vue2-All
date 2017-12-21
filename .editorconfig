@@ -1,9 +1,13 @@
+/*
+ 该文件定义项目的编码规范，编译器的行为会与 .editorconfig文件中定义的一致，并且其优先级比编译器自身的设置的要高，
+ 这在多人合作开发项目时十分有用而且必要。
+*/
 root = true
 
-[*]
-charset = utf-8
-indent_style = space
-indent_size = 2
-end_of_line = lf
-insert_final_newline = true
-trim_trailing_whitespace = true
+[*] // 对所有文件应用 下面的规则
+charset = utf-8         // 编码使用 utf-8
+indent_style = space    // 缩进使用空格
+indent_size = 2         // 缩进数量为2个空格
+end_of_line = lf        // 换行符的格式
+insert_final_newline = true // 是否在文件的最后插入一个空行
+trim_trailing_whitespace = true // 是否删除行尾的空格

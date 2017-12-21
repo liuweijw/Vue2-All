@@ -1,17 +1,24 @@
 # Vue2-All
 Vue2 + Vue-router2 + Vuex + Webpack
 
-采用官方Vue cli脚手架搭建初始项目。
+采用官方Vue cli脚手架搭建初始项目
 
-目的：初始化项目基础上集成开发或学习中容易产生的问题、常用组件等方便快速构建开发新项目。
+目的：初始化项目基础上集成开发或学习中容易产生的问题、常用组件等方便快速构建开发新项目
 
 下载：git clone https://github.com/liuweijw/Vue2-All.git
+
 切换目录 cd Vue2-All
+
 安装依赖到本地 npm install
+
 运行 npm run dev 
+
 本地浏览器查看运行效果 http://localhost:8080
+
 发布运行命令 npm run build
+
 查看项目分析 npm run build --report
+
 单元测试 npm run unit
 
 # 学习知识

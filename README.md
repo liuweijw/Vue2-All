@@ -34,7 +34,7 @@ Vue2 + Vue-router2 + Vuex + Webpack
 
 5、vuex [guide](https://vuex.vuejs.org/zh-cn/)
   
-   vue-devtools 很方便的查看vuex，安装方法 [guide](https://github.com/liuweijw/Vue2-All/VUE_DEV.md)
+***vue-devtools 很方便的查看vuex，安装方法 [guide](https://github.com/liuweijw/Vue2-All/blob/master/VUE_DEV.md)
 
 6、es6 [guide](http://es6.ruanyifeng.com/)
 

@@ -3,6 +3,8 @@ import App from '../App'
 // 此文件做模块路由配置
 const index = r => require.ensure([], () => r(require('../pages/index/Index')), 'index')
 const login = r => require.ensure([], () => r(require('../pages/login/Login')), 'login')
+const currency = r => require.ensure([], () => r(require('../pages/example/Currency')), 'currency')
+const http = r => require.ensure([], () => r(require('../pages/example/Http')), 'http')
 
 const routes = [{
   path: '/',
@@ -19,6 +21,14 @@ const routes = [{
     { // 登录
       path: '/login',
       component: login
+    },
+    { // 数据金额filter
+      path: '/currency',
+      component: currency
+    },
+    { // 数据获取
+      path: '/http',
+      component: http
     }
   ]
 }]

@@ -4,6 +4,8 @@
     <h2>Example Links</h2>
     <ul>
       <li><router-link to="/login">to login page</router-link></li>
+      <li><router-link to="/currency">to Example Currency page</router-link></li>
+      <li><router-link to="/http">to Example http page</router-link></li>
     </ul>
     <h2>Essential Links</h2>
     <ul>

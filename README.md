@@ -1,5 +1,5 @@
 # Vue2-All
-Vue2 + Vue-router2 + Vuex + Webpack
+Vue2 + Vue-router2 + Vuex + Webpack + axios
 
 采用官方Vue cli脚手架初始项目
 
@@ -38,9 +38,11 @@ Vue2 + Vue-router2 + Vuex + Webpack
 
 6、es6 [guide](http://es6.ruanyifeng.com/)
 
+7、网络请求封装 axios [guide](https://github.com/axios/axios)
+
 # 开发工具
 1、git [guide](http://www.runoob.com/git/git-tutorial.html)
 
 2、vscode [guide](https://code.visualstudio.com/)
 
-3、vscode 插件安装
+- vscode plugin install [guide](https://github.com/liuweijw/Vue2-All/blob/master/VSCODE.md)

@@ -13,6 +13,9 @@ import actions from './actions'
 import mutations from './mutations'
 import getters from './getters'
 
+// 子模块里面的vuex
+import counter from './modules/counter'
+
 // 实例化Vuex
 Vue.use(Vuex)
 
@@ -37,12 +40,16 @@ const vuexLocal = VuexPersistence({
 const store = new Vuex.Store({
   state: {
     token: null,
-    title: ''
+    title: '',
+    count: 1
   },
   getters: getters,
   actions: actions,
   mutations: mutations,
   plugins: [vuexLocal],
+  modules: {
+    c: counter
+  },
   // 生产环境不能用严苛模式，否则性能受影响
   strict: process.env.NODE_ENV !== 'production'
 })

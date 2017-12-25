@@ -11,13 +11,13 @@ Vue2 + Vue-router2 + Vuex + Webpack + axios
 
 安装依赖到本地 npm install
 
-运行 npm run dev 
+运行 npm run dev
 
 本地浏览器查看运行效果 http://localhost:8080
 
 发布运行命令 npm run build
 
-检查代码 npm run lint
+检查且规范代码 npm run lint
 
 查看项目分析 npm run build --report
 
@@ -46,3 +46,31 @@ Vue2 + Vue-router2 + Vuex + Webpack + axios
 2、vscode [guide](https://code.visualstudio.com/)
 
 - vscode plugin install [guide](https://github.com/liuweijw/Vue2-All/blob/master/VSCODE.md)
+
+# 开发规范
+
+- vscode 开发环境配置更好的匹配eslint规则定义，方便快速开发、修复问题。 用户设置如下：
+```
+{
+    // 自动保存
+    "files.autoSave": "onFocusChange",
+    // tab 自动缩进2个空格
+    "editor.tabSize": 2,
+    // 打开同类多个文件
+    "workbench.editor.enablePreview": false,
+    // Turns auto fix on save on or off.
+    "eslint.autoFixOnSave": true,
+    // 启用后，保存文件时在文件末尾插入一个最终新行。
+    "files.insertFinalNewline": true,
+    // 启用后，将在保存文件时剪裁尾随空格。
+    "files.trimTrailingWhitespace": true,
+    // 采用 atom key 风格
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    // theme
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.iconTheme": "vscode-icons"
+}
+```
+- Eslint 规范定义 [点击查看介绍](.eslintrc.js) 更多的可以自行配置

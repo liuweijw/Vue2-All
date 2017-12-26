@@ -7,13 +7,15 @@ import { baseURL } from '../config/env'
 // axios defaults 配置
 axios.defaults.timeout = 10000
 axios.defaults.baseURL = baseURL
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
+axios.defaults.headers.post['X-Requested-With'] = 'XMLHttpRequest'
+axios.defaults.headers.post['Content-Type'] = 'application/json'
+axios.defaults.headers.post['Cache-Control'] = 'no-cache'
 
 // http request 拦截器
 axios.interceptors.request.use(
   config => {
-    if (store.state.token) {
-      config.headers.Authorization = `token ${store.state.token}`
+    if (store.state.token && store.state.auth) {
+      config.headers.Authorization = `Bearer ${store.state.token}`
     }
     return config
   },
@@ -38,7 +40,11 @@ axios.interceptors.response.use(
             query: { redirect: router.currentRoute.fullPath }
           })
           break
-        default: break
+        default: // 其它业务或者权限问题直接将 response 返回
+          if (error.response) {
+            return Promise.resolve(error.response)
+          }
+          break
       }
     }
     // console.log(JSON.stringify(error));//console : Error: Request failed with status code 402

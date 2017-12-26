@@ -5,7 +5,7 @@
     <ul>
       <li><router-link to="/login">to login page</router-link></li>
       <li><router-link to="/currency">to Example Currency page</router-link></li>
-      <li><router-link to="/http">to Example http page</router-link></li>
+      <li><router-link to="/http?t=1">to Example http page</router-link></li>
     </ul>
     <h2>Essential Links</h2>
     <ul>

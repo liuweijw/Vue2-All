@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === 'development') {
 } else if (process.env.NODE_ENV === 'production') {
   // 匹配api接口 https://github.com/liuweijw/fw-framework
   // api 接口文档 http://localhost:8081/api/swagger-ui.html
-  baseURL = 'http://localhost:8081/api'
+  baseURL = 'http://localhost:8081/fw/api'
   routerMode = 'hash'
 }
 

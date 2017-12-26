@@ -1,5 +1,5 @@
 # Vue2-All
-Vue2 + Vue-router2 + Vuex + Webpack + axios
+Vue2 + Vue-router2 + Vuex + Webpack + Axios + jwt
 
 采用官方Vue cli脚手架初始项目
 
@@ -40,6 +40,8 @@ Vue2 + Vue-router2 + Vuex + Webpack + axios
 
 7、网络请求封装 axios [guide](https://github.com/axios/axios)
 
+8、权限控制 jwt [后台配合springboot工程](https://github.com/liuweijw/fw-framework)
+
 # 开发工具
 1、git [guide](http://www.runoob.com/git/git-tutorial.html)
 
@@ -74,3 +76,8 @@ Vue2 + Vue-router2 + Vuex + Webpack + axios
 }
 ```
 - Eslint 规范定义 [点击查看介绍](.eslintrc.js) 更多的可以自行配置
+
+# 项目说明
+- 2017-12-21 初始化项目提交
+- 2017-12-25 完成Vue2 + Vue-router2 + Vuex + Webpack + Axios 集成并且配合[服务端](https://github.com/liuweijw/fw-framework)调试OK
+- 2017-12-26 至 2017-12-31 完成jwt 权限验证、路由、登录、登出等功能。

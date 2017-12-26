@@ -24,11 +24,17 @@ const routes = [{
     },
     { // 数据金额filter
       path: '/currency',
-      component: currency
+      component: currency,
+      meta: {
+        requireAuth: true
+      }
     },
     { // 数据获取
       path: '/http',
-      component: http
+      component: http,
+      meta: {
+        requireAuth: true
+      }
     }
   ]
 }]

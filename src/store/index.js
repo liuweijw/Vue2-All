@@ -40,6 +40,7 @@ const vuexLocal = VuexPersistence({
 const store = new Vuex.Store({
   state: {
     token: null,
+    refreshToken: null,
     auth: false,
     title: '',
     count: 1

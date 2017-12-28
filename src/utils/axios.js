@@ -16,6 +16,11 @@ axios.interceptors.request.use(
   config => {
     if (store.state.token && store.state.auth) {
       config.headers.Authorization = `Bearer ${store.state.token}`
+      // if (config.url.indexOf('/auth/token') !== -1) {
+      //   config.headers.Authorization = `Bearer ${store.state.refreshToken}`
+      // } else {
+      //   config.headers.Authorization = `Bearer ${store.state.token}`
+      // }
     }
     return config
   },

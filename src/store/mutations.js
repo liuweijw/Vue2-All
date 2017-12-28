@@ -5,9 +5,10 @@ export default {
     state.token = null
     state.auth = false
   },
-  [LOGIN] (state, token) {
-    if (token) {
-      state.token = token
+  [LOGIN] (state, payload) {
+    if (payload && payload.token) {
+      state.token = payload.token
+      state.refreshToken = payload.refreshToken
       state.auth = true
     }
   }

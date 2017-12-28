@@ -7,3 +7,5 @@ export const version = type => http.get('/version/init?type=' + type)
 export const login = credentials => http.post('/auth/login', credentials)
 
 export const user = () => http.get('/user/me')
+
+export const token = () => http.post('/auth/token')

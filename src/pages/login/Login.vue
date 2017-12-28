@@ -43,7 +43,10 @@ export default {
         password: this.credentials.password
       }
       login(credentials).then(res => {
-        this.$store.dispatch('logined', res.token)
+        this.$store.dispatch('logined', {
+          token: res.token,
+          refreshToken: res.refreshToken
+        })
         let redirectUrl = getQueryString('redirect')
         // this.$router.go(-1)
         this.$router.push({ path: redirectUrl })

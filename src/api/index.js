@@ -9,3 +9,5 @@ export const login = credentials => http.post('/auth/login', credentials)
 export const user = () => http.get('/user/me')
 
 export const token = () => http.post('/auth/token')
+
+export const logout = () => http.post('/auth/logout')

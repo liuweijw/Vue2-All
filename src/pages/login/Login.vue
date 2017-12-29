@@ -3,7 +3,7 @@
       {{ title }} <br>
       <ul>
         <li><router-link to="/index">back to index page</router-link></li>
-        <li @click="logout()"><router-link to="">logout</router-link></li>
+        <li @click="submitlogout()"><router-link to="">logout</router-link></li>
       </ul>
       <br/>
       <div class="alert alert-danger" v-if="error">
@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import { login } from '../../api'
+import { login, logout } from '../../api'
 import { getQueryString } from '../../utils/base'
 export default {
   data () {
@@ -52,9 +52,11 @@ export default {
         this.$router.push({ path: redirectUrl })
       })
     },
-    logout () {
-      this.$store.dispatch('logout')
-      this.$router.push({ path: 'index' })
+    submitlogout () {
+      logout().then(res => {
+        this.$store.dispatch('logout')
+        this.$router.push({ path: 'index' })
+      })
     }
   }
 }

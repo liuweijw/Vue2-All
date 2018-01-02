@@ -42,6 +42,8 @@ Vue2 + Vue-router2 + Vuex + Webpack + Axios + jwt
 
 8、权限控制 jwt [后台配合springboot工程](https://github.com/liuweijw/fw-framework)
 
+- jwt 不需要的可以跳过
+
 # 开发工具
 1、git [guide](http://www.runoob.com/git/git-tutorial.html)
 
@@ -80,4 +82,4 @@ Vue2 + Vue-router2 + Vuex + Webpack + Axios + jwt
 # 项目更新说明
 - 2017-12-21 初始化项目提交
 - 2017-12-25 完成Vue2 + Vue-router2 + Vuex + Webpack + Axios 集成并且配合[服务端](https://github.com/liuweijw/fw-framework)调试OK
-- 2017-12-26 至 2017-12-31 完成jwt 权限验证、路由、登录、登出等功能。
+- 2017-12-26 至 2017-12-31 集成jwt 并且完成权限验证、路由、登录、登出等功能调试OK。

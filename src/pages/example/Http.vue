@@ -5,13 +5,14 @@
       <h3 @click="protectedMethod()"> 点击获取 protected (需要权限 AUTH) </h3><br>
       <h3 @click="versionMethod()"> 点击获取 protected (需要权限 ADMIN) </h3><br>
       <h3 @click="refershToken()"> 点击获取 refershToken 刷新token </h3><br>
+      <h3 @click="submitlogout()"> 点击退出登录 </h3><br>
 
       result: {{ result }}
   </div>
 </template>
 
 <script>
-import { version, user, token } from '../../api'
+import { version, user, token, logout } from '../../api'
 export default {
   data () {
     return {
@@ -38,6 +39,12 @@ export default {
           token: res.token,
           refreshToken: res.refreshToken
         })
+      })
+    },
+    submitlogout () {
+      logout().then(res => {
+        this.$store.dispatch('logout')
+        this.$router.push({ path: 'index' })
       })
     }
   }

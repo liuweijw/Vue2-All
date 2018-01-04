@@ -48,8 +48,11 @@ export default {
           refreshToken: res.refreshToken
         })
         let redirectUrl = getQueryString('redirect')
-        // this.$router.go(-1)
-        this.$router.push({ path: redirectUrl })
+        if (redirectUrl) {
+          this.$router.push({ path: redirectUrl })
+        } else {
+          this.$router.go(-1)
+        }
       })
     },
     submitlogout () {

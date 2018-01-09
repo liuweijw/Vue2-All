@@ -79,7 +79,13 @@ Vue2 + Vue-router2 + Vuex + Webpack + Axios + jwt
 ```
 - Eslint 规范定义 [点击查看介绍](.eslintrc.js) 更多的可以自行配置
 
+# 项目待完成
+- 集成weex
+- 搭建weex-android 和 weex-ios
+- 搭建demo工程
+
 # 项目更新说明
 - 2017-12-21 初始化项目提交
 - 2017-12-25 完成Vue2 + Vue-router2 + Vuex + Webpack + Axios 集成并且配合[服务端](https://github.com/liuweijw/fw-framework)调试OK
 - 2017-12-26 至 2017-12-31 集成jwt 并且完成权限验证、路由、登录、登出等功能调试OK。
+

@@ -3,6 +3,7 @@ import { LOGIN, LOGOUT } from './mutations-types'
 export default {
   [LOGOUT] (state) {
     state.token = null
+    state.refreshToken = null
     state.auth = false
   },
   [LOGIN] (state, payload) {

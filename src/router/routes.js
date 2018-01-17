@@ -1,10 +1,14 @@
-import App from '../App'
+import App from '../App.vue'
 
 // 此文件做模块路由配置
-const index = r => require.ensure([], () => r(require('../pages/index/Index')), 'index')
-const login = r => require.ensure([], () => r(require('../pages/login/Login')), 'login')
-const currency = r => require.ensure([], () => r(require('../pages/example/Currency')), 'currency')
-const http = r => require.ensure([], () => r(require('../pages/example/Http')), 'http')
+// const home = r => require.ensure([], () => r(require('../pages/home/Home.vue')), 'home')
+// const login = r => require.ensure([], () => r(require('../pages/login/Login.vue')), 'login')
+// const currency = r => require.ensure([], () => r(require('../pages/example/Currency.vue')), 'currency')
+// const http = r => require.ensure([], () => r(require('../pages/example/Http.vue')), 'http')
+import home from '../pages/home/Home.vue'
+import login from '../pages/login/Login.vue'
+import currency from '../pages/example/Currency.vue'
+import http from '../pages/example/Http.vue'
 
 const routes = [{
   path: '/',
@@ -12,11 +16,11 @@ const routes = [{
   children: [ // 二级路由。对应App.vue
     { // 地址为空时跳转index页面
       path: '',
-      redirect: '/index'
+      redirect: '/home'
     },
     { // 首页
-      path: '/index',
-      component: index
+      path: '/home',
+      component: home
     },
     { // 登录
       path: '/login',

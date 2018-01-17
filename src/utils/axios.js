@@ -1,6 +1,6 @@
 import axios from 'axios'
-import router from '../router'
-import store from '../store'
+import router from '../router/index'
+import store from '../store/index'
 import { LOGOUT } from '../store/mutations-types'
 import { baseURL } from '../config/env'
 
@@ -51,9 +51,11 @@ axios.interceptors.response.use(
           }
           break
       }
+      // console.log(JSON.stringify(error));//console : Error: Request failed with status code 402
+      return Promise.reject(error.response.data)
     }
-    // console.log(JSON.stringify(error));//console : Error: Request failed with status code 402
-    return Promise.reject(error.response.data)
+    // 返回response 为 null 的情况，底层不处理
+    return Promise.resolve(error.response)
   }
 )
 

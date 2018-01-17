@@ -1,8 +1,8 @@
 <template>
   <div>
-      {{ title }} <br>
+      {{ title }} <br />
       <ul>
-        <li><router-link to="/index">back to index page</router-link></li>
+        <li><router-link to="/home">back to index page</router-link></li>
         <li @click="submitlogout()"><router-link to="">logout</router-link></li>
       </ul>
       <br/>
@@ -12,18 +12,18 @@
       <div class="form-group">
         <input type="text" class="form-control"
           placeholder="Enter your username"
-          v-model="credentials.username" >
+          v-model="credentials.username" />
       </div>
       <div class="form-group">
         <input type="password" class="form-control"
-          placeholder="Enter your password" v-model="credentials.password" >
+          placeholder="Enter your password" v-model="credentials.password" />
       </div>
       <button class="btn btn-primary" @click="submit()">Access</button>
   </div>
 </template>
 
 <script>
-import { login, logout } from '../../api'
+import { login, logout } from '../../api/api'
 import { getQueryString } from '../../utils/base'
 export default {
   data () {
@@ -58,7 +58,7 @@ export default {
     submitlogout () {
       logout().then(res => {
         this.$store.dispatch('logout')
-        this.$router.push({ path: 'index' })
+        this.$router.push({ path: 'home' })
       })
     }
   }

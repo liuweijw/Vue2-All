@@ -39,12 +39,14 @@ export default {
           token: res.token,
           refreshToken: res.refreshToken
         })
+      }).then(res => {
+        this.$router.push({ path: '/' })
       })
     },
     submitlogout () {
       logout().then(res => {
         this.$store.dispatch('logout')
-        this.$router.push({ path: 'home' })
+        this.$router.push({ path: '/' })
       })
     }
   }

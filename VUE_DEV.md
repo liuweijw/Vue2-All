@@ -7,7 +7,7 @@
 
 1、将工程中 [/src/assets/chrome.zip](/src/assets/chrome.zip) 下载并解压
 
-2、打开chrome新选项卡，将解压的 chrome 文件夹拖到浏览器中
+2、打开chrome扩展程序或者打开新选项卡输入chrome://extensions/，将解压的 chrome 文件夹拖到浏览器中
 
 3、将开发者模式勾选去掉
 

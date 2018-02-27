@@ -2,7 +2,7 @@
   "name": "Vue2-All",
   "version": "1.0.0",
   "description": "Vue2-All",
-  "author": "liuweijw <2429537557@qq.com>",
+  "author": "liuweijw <liuweijw.github@foxmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

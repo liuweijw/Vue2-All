@@ -89,3 +89,7 @@ Vue2 + Vue-router2 + Vuex + Webpack + Axios + jwt
 - 2017-12-25 完成Vue2 + Vue-router2 + Vuex + Webpack + Axios 集成并且配合[服务端](https://github.com/liuweijw/fw-framework)调试OK
 - 2017-12-26 至 2017-12-31 集成jwt 并且完成权限验证、路由、登录、登出等功能调试OK。
 
+# 问题和描述
+- 使用Visual build软件的时候，编译05版本的VS项目，报错：error MSB3428: 未能加载Visual C++组建"VCBuild.exe"。要解决此问题，1）安装.NET Framework 2.0 SDK；2）安装Microsoft Visual Studio 2005；3）如果将该组件安装到了其他位置，请讲其位置添加到系统路径中；
+
+- 此问题解决： npm install --global --production windows-build-tools  （全局安装windows构建工具）

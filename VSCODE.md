@@ -79,3 +79,11 @@ Vue VSCode Snippets
 VueHelper
 
 Auto-Open Markdown Preview
+
+IntelliSense for CSS class names in HTML
+
+Code Spell Checker
+
+TODO Highlight
+
+
